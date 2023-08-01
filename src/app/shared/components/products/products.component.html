@@ -1,3 +1,28 @@
+
+<button class="btn btn-warning" 
+[disabled]="IsDisabled"
+(click)="onProductAdd()"
+>Add Products</button>
+
+<button class="btn btn-danger ml-2"
+[disabled] = "cartCount === 0" 
+(click) = "onProductRemove()"
+>Remove Product</button>
+<hr>
+
+<input type="text" 
+class="form-control mb-4" 
+(keyup) = "onProductSearch($event)">
+
+<p class="alert alert-info mt-4"[innerHTML] = "productStatus">
+</p>
+<hr>
+
+<p class="alert alert-info mt-4"
+[innerHTML] = "searchPrdName"
+*ngIf = "searchPrdName.length > 0">
+</p>
+<app-dummy></app-dummy>
 <app-product></app-product>
 
 

@@ -1,0 +1,39 @@
+<p class="para">
+    here is creating li using <strong>{{productName}}</strong> and
+    version is <strong>{{producversion}}</strong> and this is one of the best version in  <strong>{{productstatus}}</strong>
+</p>
+
+<header>
+    <h1 class="text-capitalize text-center m-4">
+        creating list using angular
+    </h1>
+</header>
+
+<ul class="list-group mb-4">
+    <li class="list-group-item" *ngFor = "let skill of skills">
+       This is <strong>{{skill}} </strong>which is important to becoming a developer
+    </li>
+</ul>
+<ul class="list-group mb-4">
+    <li class="list-group-item bg-info text-white" *ngFor = "let member of team">
+        This is My Team member <strong>{{member}}</strong> who is having good quality
+    </li>
+</ul>
+
+<ul class="list-group text-capitalize mb-4">
+    <li class="list-group-item bg-success text-white" *ngFor = "let players of Indiaplayers">
+      members of our indian cricket team is <strong>{{players}}</strong> he is one of the best players from team
+    </li>
+</ul>
+ 
+<ul class="list-group text-capitalize mb-4">
+    <li class="list-group-item bg-danger text-white" *ngFor = "let hero of leaders">
+        these are our role models <strong>{{hero}}</strong> 
+    </li>
+</ul>
+
+<ul class="list-group mt-4">
+    <li class="list-group-item bg-warning" *ngFor = "let watch of brands">
+        one of the most branded watch is <strong>{{watch}}</strong>
+    </li>
+</ul>
